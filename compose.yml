@@ -2,7 +2,7 @@
 # cloudflared läuft im homelab-Stack und erreicht die Container per Name über das externe Netz "tunnel".
 services:
   portfolio:
-    image: ghcr.io/hebbie-labs/portfolio:latest
+    image: ghcr.io/firn-lab/portfolio:latest
     container_name: portfolio-www
     restart: unless-stopped
     environment:
@@ -11,7 +11,7 @@ services:
       - tunnel
 
   portfolio-dev:
-    image: ghcr.io/hebbie-labs/portfolio:dev
+    image: ghcr.io/firn-lab/portfolio:dev
     container_name: portfolio-dev
     restart: unless-stopped
     environment:
