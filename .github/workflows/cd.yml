@@ -35,7 +35,7 @@ jobs:
           context: .
           target: ${{ env.BRANCH == 'main' && 'run' || 'dev' }}
           push: true
-          tags: ghcr.io/hebbie-labs/portfolio:${{ env.BRANCH == 'main' && 'latest' || 'dev' }}
+          tags: ghcr.io/firn-lab/portfolio:${{ env.BRANCH == 'main' && 'latest' || 'dev' }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
