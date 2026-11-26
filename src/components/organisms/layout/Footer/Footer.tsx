@@ -51,6 +51,12 @@ export function Footer() {
         </div>
       </div>
       <div className="flex flex-col items-center gap-2 border-t border-line page-x py-8 text-center text-xs text-muted md:text-[13px]">
+        <iframe
+          src="https://tawaki.sh/navigation"
+          title="tawaki webring"
+          loading="lazy"
+          className="h-20 w-full border-0 [color-scheme:light] dark:invert dark:hue-rotate-180"
+        />
         <p>
           © {new Date().getFullYear()} {SITE_NAME}. {ROLE} bei{" "}
           <a
